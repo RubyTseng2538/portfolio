@@ -18,14 +18,14 @@ I’m proficient in JavaScript and experienced with libraries like React.js and 
 
 In my free time, I love playing games and listening to K-pop Musics!
                     </h2>
-                    <h3>
+                    <h2 style={{marginTop: '30px'}}>
                         Technical Skills:
                         Programming Languages: JavaScript, HTML, CSS, TypeScript, Python
                         Libraries/Frameworks: React.js, Express.js
                         Databases: PostgreSQL, Firebase, Prisma.io
                         Tools: Git & Github, Postman, ngrok
                         Design: Figma, Adobe Photoshop, Clip Studio Paint
-                    </h3>
+                    </h2>
                     </div>
                 </Col>
                 <Col>
