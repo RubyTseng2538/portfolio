@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { HashRouter, Routes, Route } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import Navigation from './Navigation';
+import Project1 from './pages/project1';
+import Project2 from './pages/project2';
+import About from './pages/about';
+import Footer from './Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HashRouter>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/project1' element={<Project1 />} />
+          <Route path='/project2' element={<Project2 />} />
+        </Routes>
+        <Footer />
+      </HashRouter>
     </div>
   );
 }

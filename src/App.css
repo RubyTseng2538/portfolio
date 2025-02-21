@@ -1,20 +1,35 @@
+:root {
+  --primary: #EAEAEE;
+  --secondary: #8EB6DC;
+  --textSecondary: #1470AF;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+body {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(0deg, #282c34, #22b0d7);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +43,209 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.footer {
+  background-color: var(--primary);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-col {
+  margin-bottom: 10px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.icon-col {
+  padding: 0px; /* Adjust the padding as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  background-color: var(--secondary);
+  padding: 1rem;
+  padding-right:15rem;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-item a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  background-color: var(--secondary);
+  padding: 2rem; /* Increase padding */
+  min-height: 60vh; /* Set a minimum height */
+}
+
+.home-text {
+  margin: 250px;
+}
+
+.home-text h1 {
+  text-align: left;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 50px; /* Increase font size */
+  margin-bottom: 1rem;
+}
+
+.home-text h2 {
+  text-align: left;
+  font-size: 1.5rem; /* Increase font size */
+  line-height: 1.6;
+}
+
+.about {
+  background-color: var(--primary);
+  padding: 2rem; /* Increase padding */
+  min-height: 90vh; /* Set a minimum height */
+}
+.about-text {
+  margin: 100px;
+}
+
+.about-text h1{
+  text-align: left;
+  color: var(--textSecondary);
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+.about-text h2 {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+
+.pfp {
+  width: 40%;
+  height: auto;
+}
+
+.works {
+  padding: 2rem;
+  background-color: var(--primary);
+}
+
+.works-title {
+  text-align: left;
+  color: var(--textSecondary);
+  padding-left: 15rem;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.summary-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow the summaries to wrap to the next line */
+  justify-content: center; /* Center the summaries */
+  gap: 20px; /* Add space between the summaries */
+}
+
+.project {
+  padding: 200px ;
+  padding-left: 700px ;
+  padding-right: 700px ;
+  text-align: left;
+  background-color: var(--primary);
+  color: var(--textSecondary);
+}
+
+.project h1{
+  text-align: center;
+}
+
+.project h4 {
+  text-align: center;
+}
+
+#img-container {
+  text-align: center;
+  justify-content: center;
+}
+
+.custom-outline-button {
+  background-color: transparent;
+  color: var(--textSecondary);
+  border: 1px solid;
+  border-radius: 40px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-outline-button:hover {
+  background-color: var(--textSecondary);
+  color: #fff;
+}
+
+.custom-outline-button.lg {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.custom-outline-button.sm {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+}
+
+@media (max-width: 2000px) {
+  .project {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .project {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
